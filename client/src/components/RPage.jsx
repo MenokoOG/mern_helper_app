@@ -1,6 +1,6 @@
 // RPage.js
 import React from 'react';
-import Navbar from './Navbar';
+
 import Button from './Button';
 import Notes from './Notes';
 

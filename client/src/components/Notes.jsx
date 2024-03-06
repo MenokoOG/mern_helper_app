@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import './Notes.css';
 
 const Notes = () => {
   const [notes, setNotes] = useState([]);
@@ -31,8 +30,6 @@ const Notes = () => {
     if (editing) {
       try {
         await axios.put(`/api/notes/${editNoteId}`, newNote);
-        setEditing(false);
-        setEditNoteId(null);
       } catch (error) {
         console.error('Error updating note:', error);
       }
@@ -43,7 +40,7 @@ const Notes = () => {
         console.error('Error creating note:', error);
       }
     }
-    setNewNote({ title: '', content: '' });
+    resetFormAndEditing();
     fetchNotes();
   };
 
@@ -62,6 +59,17 @@ const Notes = () => {
     }
   };
 
+  const handleCancel = () => {
+    // Reset editing state and clear form
+    resetFormAndEditing();
+  };
+
+  const resetFormAndEditing = () => {
+    setEditing(false);
+    setEditNoteId(null);
+    setNewNote({ title: '', content: '' });
+  };
+
   return (
     <section className="notes">
       <form onSubmit={handleSubmit}>
@@ -70,11 +78,14 @@ const Notes = () => {
         <label htmlFor="content">Content:</label>
         <textarea id="content" name="content" rows="4" value={newNote.content} onChange={handleInputChange}></textarea>
         <button type="submit">{editing ? 'Update Note' : 'Add Note'}</button>
+        {editing && (
+          <button type="button" onClick={handleCancel}>Cancel</button> // Note the type="button" to prevent form submission
+        )}
       </form>
       <ul>
         {notes.map((note) => (
           <li key={note._id}>
-            <strong>{note.title}</strong>: {note.content}
+            <strong>{note.title}</strong> {note.content}
             <button className="notes-edit" onClick={() => handleEdit(note)}>Edit</button>
             <button className="notes-delete" onClick={() => handleDelete(note._id)}>Delete</button>
           </li>

@@ -1,6 +1,5 @@
 import React from 'react';
-import './Page.css'; // Import your CSS file
-import Navbar from './Navbar';
+
 
 const Resources = () => {
   return (
