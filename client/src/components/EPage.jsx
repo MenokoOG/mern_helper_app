@@ -7,7 +7,7 @@ import Notes from './Notes';
 const EPage = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1>Express</h1>

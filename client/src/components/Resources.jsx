@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 const Resources = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1 className="page-title"> Helpful Resources</h1>

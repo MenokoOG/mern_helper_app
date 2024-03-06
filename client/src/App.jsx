@@ -1,6 +1,7 @@
 // App.js
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar'; // Ensure you import the Navbar component
 import Home from './components/Home';
 import About from './components/About';
 import Resources from './components/Resources';
@@ -13,6 +14,7 @@ import NPage from './components/NPage';
 const App = () => {
   return (
     <Router>
+      <Navbar /> {/* Navbar is placed here to ensure it's displayed across all routes */}
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />

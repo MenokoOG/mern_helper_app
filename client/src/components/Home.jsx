@@ -8,7 +8,7 @@ import vschool from '../assets/v_school.png';
 const Home = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1 className="page-title">MERN Stack Helper</h1>

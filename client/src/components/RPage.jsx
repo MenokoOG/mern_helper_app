@@ -7,7 +7,7 @@ import Notes from './Notes';
 const RPage = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1>React</h1>

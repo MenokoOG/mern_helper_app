@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 const About = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1 className="page-title">About MERN Stack Helper</h1>

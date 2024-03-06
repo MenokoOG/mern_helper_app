@@ -3,6 +3,7 @@
 body {
     margin: 0;
     padding: 0;
+    padding-top: 30px;
     font-size: 25px;
     color: #4b4b4b;
     font-family: 'Keffeesatz', Arial, sans-serif;
@@ -11,7 +12,11 @@ body {
 header {
     background-color: #151719;
     padding: 10px 0;
-    text-align: center; /* Center the content horizontally */
+    text-align: center; 
+    position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000; 
 }
 
 nav ul {

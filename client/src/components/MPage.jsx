@@ -6,7 +6,7 @@ import Notes from './Notes';
 const MPage = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1>MongoDB and Mongoose</h1>

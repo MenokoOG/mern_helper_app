@@ -7,7 +7,7 @@ import Notes from './Notes';
 const NPage = () => {
   return (
     <>
-      <Navbar />
+      
       <main>
         <section className="container">
           <h1>Node.js</h1>
