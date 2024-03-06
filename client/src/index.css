@@ -1,0 +1,39 @@
+/* globalStyles.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 25px;
+    color: #4b4b4b;
+    font-family: 'Keffeesatz', Arial, sans-serif;
+}
+
+header {
+    background-color: #151719;
+    padding: 10px 0;
+    text-align: center; /* Center the content horizontally */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #e5eff5;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    color: #f05230;
+}
+
+main {
+    text-align: center; /* Center the content horizontally */
+}

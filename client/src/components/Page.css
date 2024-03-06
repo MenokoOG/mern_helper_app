@@ -1,0 +1,74 @@
+/* Page.css */
+
+.container {
+    max-width: 800px;
+    margin: 0 auto; /* Center the container horizontally */
+    padding: 20px;
+}
+
+.page-title {
+    color: #151719;
+    font-family: 'KeffeesatzBold', Arial, sans-serif;
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.intro {
+    margin-bottom: 20px;
+}
+
+.intro img {
+    max-width: 100%;
+}
+
+.content {
+    line-height: 1.6;
+}
+
+.button {
+    background-color: #151719;
+    color: #fff;
+    text-decoration: none;
+    border: 2px solid #e1e1e1;
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #f05230;
+}
+
+.notes {
+    margin-top: 20px;
+}
+
+.notes label {
+    color: #979797;
+}
+
+input {
+    margin-bottom: 15px;
+}
+
+.notes textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid rgba(122, 192, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.4);
+    border-radius: 5px;
+    resize: vertical;
+    margin-bottom: 15px;
+}
+
+.notes textarea:focus {
+    outline: none;
+    border-color: #979797;
+}
+
+.icon {
+    margin-right: 10px; /* Adjust as needed */
+    padding: 5px; /* Adjust as needed */
+  }
+  
