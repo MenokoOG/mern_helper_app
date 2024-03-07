@@ -3,6 +3,8 @@
 ### Overview
 MERN Stack Helper is a web application designed to provide comprehensive information and guidance on utilizing the MERN stack technologies - MongoDB, Express.js, React.js, and Node.js. The application consists of multiple pages, each focusing on a specific technology within the MERN stack. 
 
+![diagram of app](./client/src/assets/mern_helper_diagram.png)
+
 ### Features
 1. **Home Page**
    - Displays an introduction to the application.
