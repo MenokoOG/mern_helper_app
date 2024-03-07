@@ -5,7 +5,7 @@ import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Resources from './components/Resources';
-import Author from './components/Author';
+import Planning from './components/Planning';
 import MPage from './components/MPage';
 import EPage from './components/EPage';
 import RPage from './components/RPage';
@@ -21,7 +21,7 @@ const App = () => {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/resources" element={<Resources />} />
-          <Route path="/author" element={<Author />} />
+          <Route path="/planning" element={<Planning />} />
           <Route path="/m-page" element={<MPage />} />
           <Route path="/e-page" element={<EPage />} />
           <Route path="/r-page" element={<RPage />} />

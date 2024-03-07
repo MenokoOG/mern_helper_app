@@ -82,12 +82,15 @@ const Notes = () => {
           <button type="button" onClick={handleCancel}>Cancel</button> // Note the type="button" to prevent form submission
         )}
       </form>
-      <ul>
+      <ul className="grid-container">
         {notes.map((note) => (
-          <li key={note._id}>
-            <strong>{note.title}</strong> {note.content}
-            <button className="notes-edit" onClick={() => handleEdit(note)}>Edit</button>
-            <button className="notes-delete" onClick={() => handleDelete(note._id)}>Delete</button>
+          <li key={note._id} className="card">
+            <h2>{note.title}</h2>
+            <p>{note.content}</p>
+            <div className="buttons">
+              <button className="notes-edit" onClick={() => handleEdit(note)}>Edit</button>
+              <button className="notes-delete" onClick={() => handleDelete(note._id)}>Delete</button>
+            </div>
           </li>
         ))}
       </ul>

@@ -91,100 +91,169 @@ h1 {
     font-family: 'Arial', sans-serif;
 }
 
-.notes-edit, .notes-delete {
-    position: relative;
-    margin-left: 10px;
-    padding: 5px 8px;
-    font-size: 0.8rem;
-    cursor: pointer;
-    border-radius: 3px;
+.notes ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 30px;
 }
 
 .notes li {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 5px;
+    background-color: #FFFAFA;
+    border-radius: 15px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.3s ease;
+    list-style: none;
+}
+
+.notes li:hover {
+    transform: translateY(-5px);
+}
+
+.notes h2 {
+    font-size: 24px;
     margin-bottom: 10px;
 }
 
+.notes p {
+    margin-bottom: 15px;
+}
+
+.notes .buttons {
+    display: flex;
+    justify-content: space-between;
+}
+.card {
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+    margin-top: 0;
+}
+
+.card a {
+    text-decoration: none;
+}
+
+.card p {
+    color: #E0E0E0;
+}
+
+/* Light Theme Styles */
+.light .card {
+    background-color: #FFF8E1; /* Light background color for light theme */
+}
+
+.light .card a {
+    color: #3E2723; /* Darker font color for light theme */
+}
+
+.light .card p {
+    color: #311B92; /* Darker text color for light theme */
+}
+
+/* Dark Theme Styles */
+.dark .card {
+    background-color: #37474F; /* Dark background color for dark theme */
+}
+
+.dark .card a {
+    color: #E0E0E0; /* Light font color for dark theme */
+}
+
+.dark .card p {
+    color: #E0E0E0; /* Light text color for dark theme */
+}
+
+
+
 /* Dark Theme Styles */
 .dark {
-    color: #E0E0E0;
-    background-color: #121212;
+    color: #E0E0E0; /* Light font color for dark theme */
+    background-color: #121212; /* Dark background color for dark theme */
+    font-family: 'Montserrat', sans-serif; /* Modern font for dark theme */
 }
 
 .dark header {
-    background-color: #1F1B24;
+    background-color: #1E88E5; /* Dark blue header background color */
 }
 
 .dark nav ul li a, .dark a {
-    color: #BB86FC;
+    color: #E0E0E0; /* Light font color for dark theme */
 }
 
 .dark nav ul li a:hover, .dark a:hover {
-    color: #03DAC6;
+    color: #FF6F00; /* Highlighted font color for dark theme */
 }
 
 .dark .container {
-    background-color: #2A2A2A;
+    background-color: #263238; /* Slightly darker container background color */
 }
 
 .dark .button, .dark .notes button {
-    background-color: #6200EE;
+    background-color: #512DA8; /* Dark purple button color for dark theme */
 }
 
 .dark .button:hover, .dark .notes button:hover {
-    background-color: #3700B3;
+    background-color: #673AB7; /* Slightly lighter purple for highlighted button color */
 }
 
 .dark .notes li {
-    background-color: #333;
-    border: 1px solid #444;
+    background-color: #37474F; /* Darker background color for notes in dark theme */
+    border: 1px solid #455A64; /* Border color for notes in dark theme */
 }
 
 .dark .content, .dark .notes label, .dark .notes li strong {
-    color: #B0BEC5;
+    color: #E0E0E0; /* Light font color for content in dark theme */
 }
 
 /* Light Theme Styles */
 .light {
-    color: #333;
-    background-color: #FAFAFA;
+    color: #1E88E5; /* Fun font color for light theme */
+    background-color: #FFF8E1; /* Beach vacation background color */
+    font-family: 'Comic Sans MS', cursive; /* Fun font for light theme */
 }
 
 .light header {
-    background-color: #FFF;
+    background-color: #FFD54F; /* Sun-like header background color */
 }
 
 .light nav ul li a, .light a {
-    color: #1A237E;
+    color: #3E2723; /* Darker font color for light theme */
 }
 
 .light nav ul li a:hover, .light a:hover {
-    color: #0D47A1;
+    color: #BF360C; /* Highlighted font color for light theme */
 }
 
 .light .container {
-    background-color: #FFFFFF;
+    background-color: #FFECB3; /* Lighter container background color */
 }
 
 .light .button, .light .notes button {
-    background-color: #1E88E5;
+    background-color: #FF6F00; /* Fun button color for light theme */
 }
 
 .light .button:hover, .light .notes button:hover {
-    background-color: #1565C0;
+    background-color: #FFA000; /* Highlighted button color for light theme */
 }
 
 .light .notes li {
-    background-color: #EEEEEE;
-    border: 1px solid #BDBDBD;
+    background-color: #FFF; /* Lighter background color for notes in light theme */
+    border: 1px solid #FFB300; /* Border color for notes in light theme */
 }
 
 .light .content, .light .notes label, .light .notes li strong {
-    color: #333;
+    color: #311B92; /* Darker font color for content in light theme */
 }
 
 /* Responsive adjustments */
@@ -212,9 +281,5 @@ h1 {
 
     .notes li {
         flex-direction: column;
-    }
-
-    .notes-edit, .notes-delete {
-        margin: 5px 0;
     }
 }

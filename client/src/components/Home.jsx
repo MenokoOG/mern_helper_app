@@ -12,7 +12,9 @@ const Home = () => {
       <main>
         <section className="container">
           <h1 className="page-title">MERN Stack Helper</h1>
-          <img src={vschool} alt="v school image" />
+          <a href="https://vschool.io/" target="_blank" rel="noopener noreferrer">
+  <img src={vschool} alt="v school image" />
+</a>
           <section className="intro">
             <p>MERN Stack Helper is a web application designed to provide comprehensive information and guidance on utilizing the MERN stack technologies - MongoDB, Express.js, React.js, and Node.js. The application consists of multiple pages, each focusing on a specific technology within the MERN stack.</p>
           </section>
