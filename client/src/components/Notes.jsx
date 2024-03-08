@@ -22,7 +22,7 @@ const Notes = () => {
 
   const handleInputChange = (e) => {
     const { name, value } = e.target;
-    setNewNote((prevState) => ({ ...prevState, [name]: value }));
+    setNewNote(prevState => ({ ...prevState, [name]: value }));
   };
 
   const handleSubmit = async (e) => {
@@ -60,7 +60,6 @@ const Notes = () => {
   };
 
   const handleCancel = () => {
-    // Reset editing state and clear form
     resetFormAndEditing();
   };
 
@@ -79,18 +78,30 @@ const Notes = () => {
         <textarea id="content" name="content" rows="4" value={newNote.content} onChange={handleInputChange}></textarea>
         <button type="submit">{editing ? 'Update Note' : 'Add Note'}</button>
         {editing && (
-          <button type="button" onClick={handleCancel}>Cancel</button> // Note the type="button" to prevent form submission
+          <button type="button" onClick={handleCancel}>Cancel</button>
         )}
       </form>
       <ul className="grid-container">
         {notes.map((note) => (
           <li key={note._id} className="card">
-            <h2>{note.title}</h2>
-            <p>{note.content}</p>
-            <div className="buttons">
-              <button className="notes-edit" onClick={() => handleEdit(note)}>Edit</button>
-              <button className="notes-delete" onClick={() => handleDelete(note._id)}>Delete</button>
-            </div>
+            {editing && editNoteId === note._id ? (
+              // Inline edit form for the note currently being edited
+              <form onSubmit={handleSubmit}>
+                <input type="text" name="title" value={newNote.title} onChange={handleInputChange} />
+                <textarea name="content" rows="4" value={newNote.content} onChange={handleInputChange}></textarea>
+                <button type="submit">Update Note</button>
+                <button type="button" onClick={handleCancel}>Cancel</button>
+              </form>
+            ) : (
+              <>
+                <h2>{note.title}</h2>
+                <p>{note.content}</p>
+                <div className="buttons">
+                  <button className="notes-edit" onClick={() => handleEdit(note)}>Edit</button>
+                  <button className="notes-delete" onClick={() => handleDelete(note._id)}>Delete</button>
+                </div>
+              </>
+            )}
           </li>
         ))}
       </ul>
