@@ -25,8 +25,9 @@ const EPage = () => {
             <p>Create an Express application:</p>
             <pre><code>{`const app = express();`}</code></pre>
             <p>For more information, refer to the <a href="https://expressjs.com/">Express documentation</a>.</p>
+            <h2>V School Specific Notes:</h2>
           </div>
-          <Button text="E" linkTo="/" />
+          <Button text="Return Home" linkTo="/" />
           <Notes />
         </section>
       </main>

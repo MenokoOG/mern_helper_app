@@ -28,10 +28,11 @@ const RPage = () => {
             <p>Vite is a next-generation frontend tooling that provides a fast development server and optimized build process.</p>
             <h4>Installation</h4>
             <p>To create a new React project with Vite:</p>
-            <pre><code>{`npm init @vitejs/app my-react-app --template react`}</code></pre>
+            <pre><code>{`npm create vite@latest`}</code></pre>
             <p>For more information, visit the <a href="https://vitejs.dev/">Vite website</a>.</p>
+            <h2>V School Specific Notes:</h2>
           </div>
-          <Button text="R" linkTo="/" />
+          <Button text="Return Home" linkTo="/" />
           <Notes />
         </section>
       </main>

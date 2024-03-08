@@ -24,8 +24,9 @@ const NPage = () => {
             <p>Create a Node.js script:</p>
             <pre><code>{`console.log('Hello, Node.js!');`}</code></pre>
             <p>For more information, refer to the <a href="https://nodejs.org/en/docs/">Node.js documentation</a>.</p>
+            <h2>V School Specific Notes:</h2>
           </div>
-          <Button text="N" linkTo="/" />
+          <Button text="Return Home" linkTo="/" />
           <Notes />
         </section>
       </main>

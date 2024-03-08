@@ -27,8 +27,9 @@ const MPage = () => {
   .then(() => console.log('Connected to MongoDB'))
   .catch(err => console.error('Could not connect to MongoDB:', err));`}</code></pre>
             <p>For more information, refer to the <a href="https://mongoosejs.com/docs/">Mongoose documentation</a>.</p>
+            <h2>V School Specific Notes:</h2>
           </div>
-          <Button text="M" linkTo="/" />
+          <Button text="Return Home" linkTo="/" />
           <Notes />
         </section>
       </main>
