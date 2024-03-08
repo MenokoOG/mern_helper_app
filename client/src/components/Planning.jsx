@@ -18,9 +18,9 @@ const Planning = () => {
             <h3>Understand the Problem:</h3> 
 <p>
 Read carefully and identify the key components.</p>
-<p>Use resources like Stack Overflow or the MDN Web Docs to clarify doubts.</p>
+<p>Use resources like <p><a href="https://stackoverflow.com/" target="_blank"> Stack Overflow</a> </p> <p>or</p> <p><a href="https://developer.mozilla.org/en-US/" target="_blank"> MDN Web Docs </a></p> to clarify doubts.</p>
 <h3>Plan:</h3>
-<p> Write pseudocode or create flowcharts to outline your solution. Tools like Lucidchart or draw.io can be very helpful for visual planning.</p>
+<p> Write pseudocode or create flowcharts to outline your solution. Tools like <p><a href="https://www.lucidchart.com/pages" target="_blank"> Lucidchart</a></p><p>or</p> <p><a href="https://www.drawio.com/" target="_blank"> draw.io</a> </p> can be very helpful for visual planning.</p>
 <h3>Execute:</h3>
 <p> Code with focus, using VS Code or Sublime Text for a better coding experience. Both editors support extensions and plugins that can facilitate your coding process.</p>
 <h3>Review:</h3>
@@ -32,11 +32,11 @@ Read carefully and identify the key components.</p>
             <h2>Project Planning and Proposal:</h2>
             <div className='card'><h3>Project Proposal:</h3>  <p>Start with a clear and concise paragraph. Tools like Google Docs can be useful for drafting and sharing documents.</p>
 
-<h3>MVP Definition:</h3><p> Define the scope of your MVP to ensure you have a focused and attainable goal. Trello or Asana can be used for project management and to track progress. </p>
+<h3>MVP Definition:</h3><p> Define the scope of your MVP to ensure you have a focused and attainable goal. <p><a href="https://trello.com/" target="_blank"> Trello</a></p> <p>or</p> <p><a href="https://asana.com/" target="_blank"> Asana</a></p> can be used for project management and to track progress. </p>
 
-<h3>User Story Mapping:</h3><p> Describe the user journey through your application to identify key features and functionalities. Tools like StoriesOnBoard can help visualize this process. </p>
+<h3>User Story Mapping:</h3><p> Describe the user journey through your application to identify key features and functionalities. Tools like <p><a href="https://storiesonboard.com/" target="_blank"> StoriesOnBoard</a></p> can help visualize this process. </p>
 
-<h3>Mind Mapping:</h3><p> Plan your application's architecture and components. MindMeister or Coggle are great tools for creating mind maps and visualizing your project structure. </p>
+<h3>Mind Mapping:</h3><p> Plan your application's architecture and components. <p><a href="https://www.mindmeister.com/" target="_blank"> MindMeister</a></p> <p>or</p> <p><a href="https://coggle.it/" target="_blank"> Coggle</a></p> are great tools for creating mind maps and visualizing your project structure. </p>
 
 
 <p>By following these guidelines and utilizing the suggested tools and resources, you can enhance your development workflow, from problem-solving to project planning and execution.</p></div>
@@ -45,7 +45,8 @@ Read carefully and identify the key components.</p>
 
             {/* Agile and Scrum */}
             <h2>Agile and Scrum</h2>
-            <div className='card'><p>Understanding Agile and Scrum is crucial for modern software development. These methodologies promote adaptive planning, evolutionary development, and flexibility. Learn more about Agile from the <a href="https://agilemanifesto.org/">Agile Manifesto</a> and about Scrum from <a href="https://www.scrum.org/resources/what-is-scrum">Scrum.org</a>.</p></div>
+            <div className='card'><p>Understanding Agile and Scrum is crucial for modern software development. These methodologies promote adaptive planning, evolutionary development, and flexibility. 
+              <p><a href="https://agilemanifesto.org/" target="_blank"> Learn more about Agile from the Agile Manifesto</a></p>   <p></p> <a href="https://www.scrum.org/resources/what-is-scrum" target="_blank"> Scrum from Scrum.org</a></p></div>
             
 
           </section>

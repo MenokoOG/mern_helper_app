@@ -47,6 +47,8 @@ main {
     padding-top: 60px;
 }
 
+
+
 .container {
     max-width: 960px;
     margin: 0 auto;
@@ -72,9 +74,20 @@ h1 {
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    margin: 0 5px 5px 0; /* Added spacing */
+    margin: 0px 5px 5px 0px; /* Added spacing */
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
     transition: background-color 0.3s ease;
+    text-decoration: none;
+}
+
+.home-btn {
+    margin: 0px 30px 30px 0px;
+}
+
+
+
+form {
+    margin-top: 50px;
 }
 
 .intro img, .notes input[type="text"], .notes textarea {
@@ -122,6 +135,7 @@ h1 {
 .notes .buttons {
     display: flex;
     justify-content: space-between;
+    
 }
 .card {
     margin: 20px;
@@ -129,6 +143,7 @@ h1 {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-decoration: none;
 }
 
 .card:hover {
@@ -140,12 +155,13 @@ h1 {
     margin-top: 0;
 }
 
-.card a {
+.card > a {
     text-decoration: none;
 }
 
 .card p {
     color: #E0E0E0;
+    text-decoration: none;
 }
 
 /* Light Theme Styles */
@@ -155,6 +171,7 @@ h1 {
 
 .light .card a {
     color: #3E2723; /* Darker font color for light theme */
+    text-decoration: none;
 }
 
 .light .card p {
@@ -164,10 +181,12 @@ h1 {
 /* Dark Theme Styles */
 .dark .card {
     background-color: #37474F; /* Dark background color for dark theme */
+    text-decoration: none;
 }
 
 .dark .card a {
     color: #E0E0E0; /* Light font color for dark theme */
+    text-decoration: none;
 }
 
 .dark .card p {
@@ -178,43 +197,49 @@ h1 {
 
 /* Dark Theme Styles */
 .dark {
-    color: #E0E0E0; /* Light font color for dark theme */
-    background-color: #121212; /* Dark background color for dark theme */
-    font-family: 'Montserrat', sans-serif; /* Modern font for dark theme */
+    color: #FFD54F; /* Bright yellow font color for dark theme */
+    background-color: #212121; /* Dark background color for dark theme */
+    font-family: 'Comic Sans MS', cursive;/* Elegant font for dark theme */
 }
 
 .dark header {
-    background-color: #1E88E5; /* Dark blue header background color */
+    background-color: #880E4F; /* Burgundy header background color */
 }
 
 .dark nav ul li a, .dark a {
-    color: #E0E0E0; /* Light font color for dark theme */
+    color: #FFD54F; /* Bright yellow font color for dark theme */
 }
 
 .dark nav ul li a:hover, .dark a:hover {
-    color: #FF6F00; /* Highlighted font color for dark theme */
+    color: #FF6E40; /* Highlighted font color for dark theme */
 }
 
 .dark .container {
-    background-color: #263238; /* Slightly darker container background color */
+    background-color: #424242; /* Slightly darker container background color */
 }
 
 .dark .button, .dark .notes button {
-    background-color: #512DA8; /* Dark purple button color for dark theme */
+    background-color: #B71C1C; /* Burgundy button color for dark theme */
 }
 
 .dark .button:hover, .dark .notes button:hover {
-    background-color: #673AB7; /* Slightly lighter purple for highlighted button color */
+    background-color: #D32F2F; /* Slightly lighter burgundy for highlighted button color */
 }
 
 .dark .notes li {
-    background-color: #37474F; /* Darker background color for notes in dark theme */
-    border: 1px solid #455A64; /* Border color for notes in dark theme */
+    background-color: #333; /* Darker background color for notes in dark theme */
+    border: 1px solid #666; /* Border color for notes in dark theme */
 }
 
 .dark .content, .dark .notes label, .dark .notes li strong {
-    color: #E0E0E0; /* Light font color for content in dark theme */
+    color: #FFD54F; /* Bright yellow font color for content in dark theme */
 }
+.dark p {
+    font-size: 18px; /* Increased font size for paragraphs */
+    margin-bottom: 50px;
+}
+
+
 
 /* Light Theme Styles */
 .light {
@@ -225,6 +250,10 @@ h1 {
 
 .light header {
     background-color: #FFD54F; /* Sun-like header background color */
+}
+
+.light p {
+    margin-bottom: 50px
 }
 
 .light nav ul li a, .light a {
