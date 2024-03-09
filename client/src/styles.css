@@ -25,13 +25,13 @@ nav ul {
 }
 
 nav ul li {
-    margin: 0 20px; /* Adds horizontal space between menu items */
+    margin: 0 20px; 
 }
 
 nav ul li a {
     display: inline-block;
     text-decoration: none;
-    font-size: 18px; /* Increased font size */
+    font-size: 18px; 
 }
 
 header {
@@ -47,25 +47,22 @@ main {
     padding-top: 60px;
 }
 
-
-
-.container {
-    max-width: 960px;
-    margin: 0 auto;
-    padding: 20px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
-}
-
-.page-title, h1 {
+h2, h3 {
     font-family: 'KeffeesatzBold', Arial, sans-serif;
-}
-
-.page-title {
-    font-size: 36px;
+    color: #1E88E5;
     margin-bottom: 20px;
 }
 
+h2 {
+    font-size: 24px; 
+}
+
+h3 {
+    font-size: 20px; 
+}
+
 h1 {
+    font-family: 'KeffeesatzBold', Arial, sans-serif;
     font-size: 70px;
 }
 
@@ -74,7 +71,7 @@ h1 {
     font-size: 16px;
     border: none;
     border-radius: 8px;
-    margin: 0px 5px 5px 0px; /* Added spacing */
+    margin: 0px 5px 5px 0px; 
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);
     transition: background-color 0.3s ease;
     text-decoration: none;
@@ -83,8 +80,6 @@ h1 {
 .home-btn {
     margin: 0px 30px 30px 0px;
 }
-
-
 
 form {
     margin-top: 50px;
@@ -111,7 +106,7 @@ form {
 }
 
 .notes li {
-    background-color: #FFFAFA;
+    background-color: rgba(255, 250, 250, 0.9); 
     border-radius: 15px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 30px;
@@ -123,11 +118,6 @@ form {
     transform: translateY(-5px);
 }
 
-.notes h2 {
-    font-size: 24px;
-    margin-bottom: 10px;
-}
-
 .notes p {
     margin-bottom: 15px;
 }
@@ -135,8 +125,8 @@ form {
 .notes .buttons {
     display: flex;
     justify-content: space-between;
-    
 }
+
 .card {
     margin: 20px;
     padding: 20px;
@@ -164,126 +154,136 @@ form {
     text-decoration: none;
 }
 
-/* Light Theme Styles */
-.light .card {
-    background-color: #FFF8E1; /* Light background color for light theme */
-}
 
-.light .card a {
-    color: #3E2723; /* Darker font color for light theme */
-    text-decoration: none;
-}
-
-.light .card p {
-    color: #311B92; /* Darker text color for light theme */
-}
-
-/* Dark Theme Styles */
-.dark .card {
-    background-color: #37474F; /* Dark background color for dark theme */
-    text-decoration: none;
-}
-
-.dark .card a {
-    color: #E0E0E0; /* Light font color for dark theme */
-    text-decoration: none;
-}
-
-.dark .card p {
-    color: #E0E0E0; /* Light text color for dark theme */
-}
 
 
 
 /* Dark Theme Styles */
 .dark {
-    color: #FFD54F; /* Bright yellow font color for dark theme */
-    background-color: #212121; /* Dark background color for dark theme */
-    font-family: 'Comic Sans MS', cursive;/* Elegant font for dark theme */
+    color: #FFFFFF; /* White text */
+    background-color: #0F2027; /* Dark blue-gray background resembling space */
+    font-family: 'Roboto', Arial, sans-serif; /* Font family */
 }
 
 .dark header {
-    background-color: #880E4F; /* Burgundy header background color */
+    background-color: #311B92; /* Dark purple header resembling space */
+}
+
+.dark p {
+    margin-bottom: 50px;
+    color: #FFD600; /* Bright yellow text resembling stars */
 }
 
 .dark nav ul li a, .dark a {
-    color: #FFD54F; /* Bright yellow font color for dark theme */
+    color: #FF9800; /* Bright orange resembling glowing stars */
 }
 
 .dark nav ul li a:hover, .dark a:hover {
-    color: #FF6E40; /* Highlighted font color for dark theme */
+    color: #FF6D00; /* Darker orange on hover */
 }
 
 .dark .container {
-    background-color: #424242; /* Slightly darker container background color */
+    background-color: #263238; /* Dark blue-gray container resembling deep space */
 }
 
 .dark .button, .dark .notes button {
-    background-color: #B71C1C; /* Burgundy button color for dark theme */
+    background-color: #FF5722; /* Deep orange button resembling a supernova */
+    color: #311B92;
 }
 
 .dark .button:hover, .dark .notes button:hover {
-    background-color: #D32F2F; /* Slightly lighter burgundy for highlighted button color */
+    background-color: #E64A19; /* Darker orange on hover */
 }
 
 .dark .notes li {
-    background-color: #333; /* Darker background color for notes in dark theme */
-    border: 1px solid #666; /* Border color for notes in dark theme */
+    background-color: #455A64; /* Dark steel blue note resembling a distant nebula */
+    border: 1px solid #546E7A; /* Lighter steel blue border */
 }
 
 .dark .content, .dark .notes label, .dark .notes li strong {
-    color: #FFD54F; /* Bright yellow font color for content in dark theme */
-}
-.dark p {
-    font-size: 18px; /* Increased font size for paragraphs */
-    margin-bottom: 50px;
+    color: #FFD600; /* Bright yellow resembling stars */
 }
 
+.dark .card {
+    background: linear-gradient(to bottom, #311B92, #0F2027); /* Dark purple-blue gradient resembling space */
+    text-decoration: none;
+}
+
+.dark .card a {
+    color: #FF9800; /* Bright orange resembling glowing stars */
+    text-decoration: none;
+}
+
+.dark .card p {
+    color: #FFD600; /* Bright yellow resembling stars */
+}
 
 
 /* Light Theme Styles */
 .light {
-    color: #1E88E5; /* Fun font color for light theme */
-    background-color: #FFF8E1; /* Beach vacation background color */
-    font-family: 'Comic Sans MS', cursive; /* Fun font for light theme */
+    color: #212121; /* Dark charcoal text */
+    background-color: #FFECB3; /* Light yellow background resembling sandy beach */
+    font-family: 'Roboto', Arial, sans-serif; /* Font family */
 }
 
 .light header {
-    background-color: #FFD54F; /* Sun-like header background color */
+    background-color: #81D4FA; /* Light blue header resembling clear sky */
 }
 
 .light p {
-    margin-bottom: 50px
+    margin-bottom: 50px;
+    color: #546E7A; /* Dark blue-gray text resembling shadows on the beach */
 }
 
 .light nav ul li a, .light a {
-    color: #3E2723; /* Darker font color for light theme */
+    color: #546E7As; /* Bright orange resembling sunlight */
 }
 
 .light nav ul li a:hover, .light a:hover {
-    color: #BF360C; /* Highlighted font color for light theme */
+    color: #FF9100; /* Darker orange on hover */
 }
 
 .light .container {
-    background-color: #FFECB3; /* Lighter container background color */
+    background-color: #FFE082; /* Light yellow container resembling sandy beach */
 }
 
 .light .button, .light .notes button {
-    background-color: #FF6F00; /* Fun button color for light theme */
+    background-color: #00ACC1; /* Bright blue button resembling clear sky */
 }
 
 .light .button:hover, .light .notes button:hover {
-    background-color: #FFA000; /* Highlighted button color for light theme */
+    background-color: #0097A7; /* Darker blue on hover */
 }
 
 .light .notes li {
-    background-color: #FFF; /* Lighter background color for notes in light theme */
-    border: 1px solid #FFB300; /* Border color for notes in light theme */
+    background-color: #FFF9C4; /* Light sand note */
+    border: 1px solid #FFD54F; /* Bright yellow border */
 }
 
 .light .content, .light .notes label, .light .notes li strong {
-    color: #311B92; /* Darker font color for content in light theme */
+    color: #212121; /* Dark charcoal */
 }
+
+.light .card {
+    background: linear-gradient(to bottom, #FFECB3, #FFFDE7); /* Light yellow gradient resembling sandy beach */
+    text-decoration: none;
+}
+
+.light .card a {
+    color: #212121; /* Bright orange resembling sunlight */
+    text-decoration: none;
+}
+
+.light .card p {
+    color: #212121; /* Dark charcoal */
+}
+
+
+
+
+
+
+
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
