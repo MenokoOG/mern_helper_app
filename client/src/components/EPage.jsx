@@ -24,7 +24,7 @@ const EPage = () => {
             <pre><code>{`const express = require('express');`}</code></pre>
             <p>Create an Express application:</p>
             <pre><code>{`const app = express();`}</code></pre>
-            <p>For more information, refer to the <a href="https://expressjs.com/">Express documentation</a>.</p>
+            <p>For more information, refer to the <a href="https://expressjs.com/" target="_blank">Express documentation</a>.</p>
             <h2>V School Specific Notes:</h2>
           </div>
           <Button text="Return Home" linkTo="/" />

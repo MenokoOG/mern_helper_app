@@ -10,7 +10,7 @@ import MPage from './components/MPage';
 import EPage from './components/EPage';
 import RPage from './components/RPage';
 import NPage from './components/NPage';
-import { ThemeProvider } from './context/ThemeContext'; 
+import { ThemeProvider } from './context/ThemeContext'; // Adjust the import path as necessary
 
 const App = () => {
   return (

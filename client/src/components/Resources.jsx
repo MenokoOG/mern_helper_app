@@ -6,8 +6,29 @@ const Resources = () => {
       <main>
         <section className="container">
           <h1 className="page-title">Helpful Resources</h1>
+          <h4>Click on the card to be taken to reference web site.</h4>
           <section className="content">
             {/* Existing resources */}
+            <h2>Windows Subsystem for Linux (WSL)</h2>
+            <div className="card">
+              <a
+                href="https://docs.microsoft.com/en-us/windows/wsl/install"
+                target="_blank"
+              >
+                <p>
+                  <a
+                    href="https://docs.microsoft.com/en-us/windows/wsl/install"
+                    target="_blank"
+                  >
+                    Windows Subsystem for Linux (WSL) allows you to run a Linux
+                    environment directly on Windows. By installing Ubuntu
+                    through WSL, you can access Linux tools and utilities
+                    seamlessly alongside your Windows applications.
+                  </a>
+                </p>
+              </a>
+            </div>
+
             <h2>Visual Studio Code (VS Code)</h2>
             <div className="card">
               <a href="https://code.visualstudio.com/" target="_blank">

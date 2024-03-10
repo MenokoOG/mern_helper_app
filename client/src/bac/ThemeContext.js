@@ -8,7 +8,8 @@ export const ThemeProvider = ({ children }) => {
   // Initialize theme from localStorage if available, otherwise default to 'dark'
   const [theme, setTheme] = useState(localStorage.getItem('theme') || 'dark');
 
-  const toggleTheme = (newTheme) => {
+  const toggleTheme = () => {
+    const newTheme = theme === 'dark' ? 'light' : 'dark';
     setTheme(newTheme);
     localStorage.setItem('theme', newTheme); // Store new theme in localStorage
     document.body.className = newTheme; // Apply the theme as a class to the body
