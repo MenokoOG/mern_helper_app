@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTheme } from '../context/ThemeContext';
 
+
 const Navbar = () => {
   const { theme, toggleTheme } = useTheme();
 
@@ -12,7 +13,7 @@ const Navbar = () => {
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/">MERN</a></li>
           <li><a href="/about">About</a></li>
           <li><a href="/resources">Resources</a></li>
           <li><a href="/planning">Planning Tips</a></li>
@@ -24,6 +25,7 @@ const Navbar = () => {
               <option value="fun">Fun</option>
               <option value="serious">Serious</option>
               <option value="space">Space</option>
+              
             </select>
           </li>
         </ul>

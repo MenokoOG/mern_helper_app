@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 import Button from './Button';
 import Notes from './Notes';
+import NotesButton from './NotesButton'; 
+import ToggleableButton from './ToggleableButton';
 
 const MPage = () => {
+ 
   return (
     <>
       
@@ -29,9 +32,13 @@ const MPage = () => {
             <p>For more information, refer to the <a href="https://mongoosejs.com/docs/" target="_blank">Mongoose documentation</a>.</p>
             <h2>V School Specific Notes:</h2>
           </div>
-          <Button text="Return Home" linkTo="/" />
-          <Notes />
+          <Button text="Return to MERN" linkTo="/" />
+          <ToggleableButton buttonText="Developer Notes" initialState={false}>
+              <NotesButton notesComponent={<Notes />} />
+            </ToggleableButton>
+          
         </section>
+        
       </main>
     </>
   );
