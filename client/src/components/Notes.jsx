@@ -85,7 +85,6 @@ const Notes = () => {
         {notes.map((note) => (
           <li key={note._id} className="card">
             {editing && editNoteId === note._id ? (
-              // Inline edit form for the note currently being edited
               <form onSubmit={handleSubmit}>
                 <input type="text" name="title" value={newNote.title} onChange={handleInputChange} />
                 <textarea name="content" rows="4" value={newNote.content} onChange={handleInputChange}></textarea>
@@ -96,6 +95,7 @@ const Notes = () => {
               <>
                 <h2>{note.title}</h2>
                 <p>{note.content}</p>
+                <p>Date Created: {new Date(note.datePosted).toLocaleDateString()}</p>
                 <div className="buttons">
                   <button className="notes-edit" onClick={() => handleEdit(note)}>Edit</button>
                   <button className="notes-delete" onClick={() => handleDelete(note._id)}>Delete</button>

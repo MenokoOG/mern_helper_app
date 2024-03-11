@@ -133,6 +133,32 @@ const Resources = () => {
                 </p>
               </a>
             </div>
+            <h2>Lorem Ipsum and Picture Ipsum</h2>
+            <div className="card">
+              <p>
+              Lorem Ipsum is commonly used as placeholder text in web development to simulate the appearance of written content without distracting the viewer with meaningful text. It allows designers and developers to focus solely on the layout and design aspects of a webpage. Similarly, Picture Ipsum serves the same purpose but with images, enabling designers to visualize how images will fit into the layout before finalizing the actual content.
+              </p>
+              <p>
+                <a href="https://baconipsum.com/" target="_blank">
+                Bacon Ipsum :Does your lorem ipsum text long for something a little meatier? Give our generator a try… it’s tasty!
+                </a>
+              </p>
+              <p>
+                <a href="https://hipsum.co/" target="_blank">
+                  Hipsum: Ipsum the Hipster way!.
+                </a>
+              </p>
+              <p>
+                <a href="https://loremipsum.io/" target="_blank">
+                 Lorem Ipsum : Classic Lorem Ipsum from the best!
+                </a>
+              </p>
+              <p>
+                <a href="https://picsum.photos/" target="_blank">
+                  Lorem Picsum: Placeholder images.
+                </a>
+              </p>
+            </div>
 
             <h2>npm</h2>
             <div className="card">

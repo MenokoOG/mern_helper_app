@@ -17,6 +17,8 @@ const Navbar = () => {
           <li><a href="/about">About</a></li>
           <li><a href="/resources">Resources</a></li>
           <li><a href="/planning">Planning Tips</a></li>
+          <li><a href="https://www.notion.so/" target="_blank">Notion </a></li>
+          
           <li>
           <label htmlFor="theme">Change Theme:</label>
             <select value={theme} onChange={(e) => handleChangeTheme(e.target.value)}>
