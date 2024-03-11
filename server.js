@@ -29,7 +29,7 @@ mongoose.connect(process.env.DB_CONNECTION_STRING, { useNewUrlParser: true, useU
 app.use('/api/notes', notesRoutes);
 
 // Start the server
-const PORT = process.env.PORT || 5000;
+const PORT = process.env.PORT ;
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
