@@ -3,7 +3,7 @@ require("dotenv").config();
 const express = require('express');
 const mongoose = require('mongoose');
 const morgan = require('morgan');
-
+const path = require("path")
 const notesRoutes = require('./routes/notes');
 
 const app = express();
@@ -12,7 +12,7 @@ const app = express();
 app.use(express.json());
 mongoose.set("strictQuery", true);
 app.use(morgan("dev"));
-
+app.use(express.static(path.join(__dirname, "client", "dist")))
 // Connect to MongoDB
 mongoose.connect(process.env.DB_CONNECTION_STRING, { useNewUrlParser: true, useUnifiedTopology: true })
   .then(() => {
@@ -30,6 +30,9 @@ app.use('/api/notes', notesRoutes);
 
 // Start the server
 const PORT = process.env.PORT ;
+app.get("*", (req, res) => {
+  res.sendFile(path.join(__dirname, "client", "dist", "index.html"));
+})
 app.listen(PORT, () => {
   console.log(`Server is running on port ${PORT}`);
 });
